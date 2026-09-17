@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Service Presentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f6f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .presentation-container {
+            width: 90%;
+            max-width: 1000px;
+            height: 80vh;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+        .slide {
+            display: none;
+            padding: 40px;
+            height: 100%;
+            animation: fadeIn 0.5s;
+        }
+        .slide.active {
+            display: flex;
+            flex-direction: column;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .header {
+            border-bottom: 3px solid #0056b3;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #0056b3;
+            margin: 0;
+            font-size: 28px;
+        }
+        .content {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            flex-grow: 1;
+        }
+        .text-section {
+            flex: 1;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .text-section ul {
+            padding-left: 20px;
+        }
+        .text-section li {
+            margin-bottom: 10px;
+        }
+        .image-section {
+            flex: 1;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            align-items: center;
+        }
+        .image-section img {
+            max-width: 100%;
+            max-height: 250px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            object-fit: cover;
+        }
+        /* Special style for the schedule image so it fits better */
+        .image-section .schedule-img {
+            max-height: 400px; 
+        }
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background: #e9ecef;
+            border-top: 1px solid #ddd;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            background-color: #0056b3;
+            color: white;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #003d82;
+        }
+        .title-slide {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .title-slide h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="presentation-container">
+    
+    <div class="slide active title-slide" id="slide-1">
+        <h1>Community Service Report</h1>
+        <p>A summary of tasks completed over two weeks.</p>
+        <p><strong>Projects:</strong> Online Orientation & Iftar Drive</p>
+    </div>
+
+    <div class="slide" id="slide-2">
+        <div class="header">
+            <h1>Week 1: Online Orientation</h1>
+        </div>
+        <div class="content">
+            <div class="text-section">
+                <ul>
+                    <li>Participated in 2-hour virtual orientation via Teams with ALKHIDMAT representative.</li>
+                    <li>Discussed foundation's mission, vision, and core values.</li>
+                    <li>Learned about major projects: food distribution, educational support, emergency relief.</li>
+                    <li>Received briefing on volunteer expectations, code of conduct, and reporting.</li>
+                    <li>Asked questions to clarify role and took notes on data privacy.</li>
+                    <li>Completed post-orientation feedback form.</li>
+                </ul>
+            </div>
+            <div class="image-section">
+                <img src="1.jpeg" alt="Teams Meeting Online Orientation">
+            </div>
+        </div>
+    </div>
+
+    <div class="slide" id="slide-3">
+        <div class="header">
+            <h1>Week 2: Iftar Drive Setup (G-7/Blue Area)</h1>
+        </div>
+        <div class="content">
+            <div class="text-section">
+                <ul>
+                    <li>Reported to assembly point at 3:00 PM.</li>
+                    <li>Unloaded and organized food packages from transport vehicle.</li>
+                    <li>Attended team briefing for role and zone assignments.</li>
+                    <li>Connected with fellow volunteers and prepared food stations.</li>
+                </ul>
+            </div>
+            <div class="image-section">
+                <img src="2.jpeg" alt="Volunteer carrying boxes">
+                <img src="3.jpeg" alt="Volunteers sitting and organizing">
+            </div>
+        </div>
+    </div>
+
+    <div class="slide" id="slide-4">
+        <div class="header">
+            <h1>Week 2: Iftar Distribution & Cleanup</h1>
+        </div>
+        <div class="content">
+            <div class="text-section">
+                <ul>
+                    <li>Positioned at assigned intersection to distribute iftar meals.</li>
+                    <li>Distributed 100-150 packages containing dates, water, juice, and a light meal.</li>
+                    <li>Offered warm wishes and Ramadan blessings to recipients.</li>
+                    <li>Assisted elderly gentleman to nearby bus stop with his package.</li>
+                    <li>Helped with post-event cleanup and joined the debrief session.</li>
+                </ul>
+            </div>
+            <div class="image-section">
+                <img src="4.jpeg" alt="Volunteer with food packages">
+                <img src="5.jpeg" alt="Volunteers taking a selfie">
+            </div>
+        </div>
+    </div>
+
+    <div class="slide" id="slide-5">
+        <div class="header">
+            <h1>8-Week Group Activity Plan</h1>
+        </div>
+        <div class="content">
+            <div class="text-section">
+                <ul>
+                    <li>Here is the schedule for our upcoming activities.</li>
+                    <li>The plan covers 8 different groups over a 8-week period.</li>
+                    <li>Our main tasks will include CPC Visits, Plantation, Cleanliness drives, and the Ramadan Campaign.</li>
+                </ul>
+            </div>
+            <div class="image-section">
+                <img src="6.jpeg" alt="9-Week Activity Plan Schedule" class="schedule-img">
+            </div>
+        </div>
+    </div>
+
+    <div class="controls">
+        <button onclick="prevSlide()">&#10094; Previous</button>
+        <span id="slide-counter" style="line-height: 40px; font-weight: bold;">Slide 1 of 5</span>
+        <button onclick="nextSlide()">Next &#10095;</button>
+    </div>
+
+</div>
+
+<script>
+    let currentSlide = 1;
+    const totalSlides = 5; // Updated to 5 slides
+
+    function showSlide(n) {
+        // Hide all slides
+        for (let i = 1; i <= totalSlides; i++) {
+            document.getElementById('slide-' + i).classList.remove('active');
+        }
+        // Show current slide
+        document.getElementById('slide-' + n).classList.add('active');
+        // Update counter
+        document.getElementById('slide-counter').innerText = `Slide ${n} of ${totalSlides}`;
+    }
+
+    function nextSlide() {
+        if (currentSlide < totalSlides) {
+            currentSlide++;
+            showSlide(currentSlide);
+        }
+    }
+
+    function prevSlide() {
+        if (currentSlide > 1) {
+            currentSlide--;
+            showSlide(currentSlide);
+        }
+    }
+
+    // Listen for keyboard presses
+    document.addEventListener('keydown', function(event) {
+        // If the right arrow key is pressed, go to the next slide
+        if (event.key === 'ArrowRight') {
+            nextSlide();
+        }
+        // If the left arrow key is pressed, go to the previous slide
+        else if (event.key === 'ArrowLeft') {
+            prevSlide();
+        }
+    });
+</script>
+
+</body>
+</html>
